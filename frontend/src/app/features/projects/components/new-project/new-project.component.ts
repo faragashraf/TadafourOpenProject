@@ -84,6 +84,10 @@ export class NewProjectComponent extends UntilDestroyedMixin implements OnInit {
     super();
   }
 
+  handleClick() {
+    console.log('Button clicked!');
+  }
+
   ngOnInit():void {
     this.resourcePath = this.apiV3Service.projects.path;
     this.fieldGroups = [{
